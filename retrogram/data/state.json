@@ -1,9 +1,13 @@
 {
-  "next_index": 1,
+  "next_index": 2,
   "published": [
     {
       "file": "01_paparazzi.jpg",
       "instagram_media_id": "18133433683645841"
+    },
+    {
+      "file": "02_supermarket.jpg",
+      "instagram_media_id": "18115094294008380"
     }
   ]
 }
