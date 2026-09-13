@@ -1,0 +1,66 @@
+name: Instagram - 2 posts daily
+
+on:
+  schedule:
+    - cron: "0 7,17 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Preview does not publish; Publish sends the next post"
+        required: true
+        type: choice
+        default: preview
+        options:
+          - preview
+          - publish
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram-publisher
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: retrogram
+    env:
+      INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+      INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+      INSTAGRAM_API_BASE: https://graph.instagram.com
+      INSTAGRAM_API_VERSION: v24.0
+      PUBLIC_IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/retrogram/assets/queue
+      DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'preview' && 'true' || 'false' }}
+    steps:
+      - name: Download project
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: retrogram/requirements.txt
+
+      - name: Install
+        run: pip install -r requirements.txt && pip install -e .
+
+      - name: Publish next post
+        run: python -m retrogram.github_action
+
+      - name: Save queue progress
+        if: env.DRY_RUN == 'false'
+        run: |
+          if git diff --quiet -- data/state.json; then
+            echo "No queue state change."
+            exit 0
+          fi
+          git config user.name "tom-jerry-swag-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/state.json
+          git commit -m "Update Instagram queue state"
+          git push
