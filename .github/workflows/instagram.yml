@@ -1,8 +1,8 @@
-name: Instagram - 2 posts daily
+name: Instagram - 3 posts daily
 
 on:
   schedule:
-    - cron: "0 7,17 * * *"
+    - cron: "0 7,12,17 * * *"
   workflow_dispatch:
     inputs:
       mode:
