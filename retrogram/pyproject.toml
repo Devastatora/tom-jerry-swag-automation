@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retrogram"
+version = "1.0.0"
+description = "Two-a-day Instagram publishing queue"
+requires-python = ">=3.11"
+dependencies = [
+  "APScheduler==3.10.4",
+  "cloudinary==1.41.0",
+  "python-dotenv==1.0.1",
+  "requests==2.32.3",
+  "tzdata==2025.1",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+

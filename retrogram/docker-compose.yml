@@ -1,0 +1,9 @@
+services:
+  retrogram:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./data:/app/data
+      - ./assets:/app/assets:ro
+
