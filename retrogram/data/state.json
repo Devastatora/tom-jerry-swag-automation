@@ -1,5 +1,5 @@
 {
-  "next_index": 8,
+  "next_index": 9,
   "published": [
     {
       "file": "01_paparazzi.jpg",
@@ -32,6 +32,10 @@
     {
       "file": "08_spiderman_window_cleaner.jpg",
       "instagram_media_id": "18499714498100808"
+    },
+    {
+      "file": "09_wonder_woman_market.jpg",
+      "instagram_media_id": "18021438371919756"
     }
   ]
 }
