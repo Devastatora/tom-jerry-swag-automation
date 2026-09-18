@@ -1,5 +1,5 @@
 {
-  "next_index": 11,
+  "next_index": 12,
   "published": [
     {
       "file": "01_paparazzi.jpg",
@@ -44,6 +44,10 @@
     {
       "file": "11_thor_lutenitsa.jpg",
       "instagram_media_id": "18117545056953253"
+    },
+    {
+      "file": "12_flash_bicycle.jpg",
+      "instagram_media_id": "18123323002861637"
     }
   ]
 }
