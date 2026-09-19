@@ -1,5 +1,5 @@
 {
-  "next_index": 13,
+  "next_index": 14,
   "published": [
     {
       "file": "01_paparazzi.jpg",
@@ -52,6 +52,10 @@
     {
       "file": "13_aquaman_pool.jpg",
       "instagram_media_id": "17969527779154172"
+    },
+    {
+      "file": "14_green_lantern_bulb.jpg",
+      "instagram_media_id": "18124546576875971"
     }
   ]
 }
