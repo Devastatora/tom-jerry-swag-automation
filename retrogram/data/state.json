@@ -1,5 +1,5 @@
 {
-  "next_index": 18,
+  "next_index": 19,
   "published": [
     {
       "file": "01_paparazzi.jpg",
@@ -72,6 +72,10 @@
     {
       "file": "18_garfield_odie_balcony.jpg",
       "instagram_media_id": "18491994052102700"
+    },
+    {
+      "file": "19_spongebob_fish_factory.jpg",
+      "instagram_media_id": "18159641995496655"
     }
   ]
 }
