@@ -1,5 +1,5 @@
 {
-  "next_index": 22,
+  "next_index": 23,
   "published": [
     {
       "file": "01_paparazzi.jpg",
@@ -88,6 +88,10 @@
     {
       "file": "22_sonic_station.jpg",
       "instagram_media_id": "18089268578679359"
+    },
+    {
+      "file": "23_pink_panther_bus_depot.jpg",
+      "instagram_media_id": "18629505619005168"
     }
   ]
 }
