@@ -1,5 +1,5 @@
 {
-  "next_index": 23,
+  "next_index": 24,
   "published": [
     {
       "file": "01_paparazzi.jpg",
@@ -92,6 +92,10 @@
     {
       "file": "23_pink_panther_bus_depot.jpg",
       "instagram_media_id": "18629505619005168"
+    },
+    {
+      "file": "24_tom_jerry_shoe_factory.jpg",
+      "instagram_media_id": "18004821455994160"
     }
   ]
 }
