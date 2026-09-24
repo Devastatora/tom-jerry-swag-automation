@@ -1,5 +1,5 @@
 {
-  "next_index": 24,
+  "next_index": 25,
   "published": [
     {
       "file": "01_paparazzi.jpg",
@@ -96,6 +96,10 @@
     {
       "file": "24_tom_jerry_shoe_factory.jpg",
       "instagram_media_id": "18004821455994160"
+    },
+    {
+      "file": "25_garfield_odie_clinic.jpg",
+      "instagram_media_id": "18155394151513315"
     }
   ]
 }
