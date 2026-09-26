@@ -1,5 +1,5 @@
 {
-  "next_index": 27,
+  "next_index": 28,
   "published": [
     {
       "file": "01_paparazzi.jpg",
@@ -108,6 +108,10 @@
     {
       "file": "27_tom_jerry_archive.jpg",
       "instagram_media_id": "17999863835805459"
+    },
+    {
+      "file": "28_pink_panther_accordion.jpg",
+      "instagram_media_id": "18095858477555254"
     }
   ]
 }
