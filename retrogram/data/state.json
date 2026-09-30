@@ -1,5 +1,5 @@
 {
-  "next_index": 36,
+  "next_index": 37,
   "published": [
     {
       "file": "01_paparazzi.jpg",
@@ -144,6 +144,10 @@
     {
       "file": "36_tom_jerry_dairy.jpg",
       "instagram_media_id": "18159904180443045"
+    },
+    {
+      "file": "37_garfield_odie_train.jpg",
+      "instagram_media_id": "18023619251924075"
     }
   ]
 }
