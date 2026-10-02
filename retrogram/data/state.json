@@ -1,5 +1,5 @@
 {
-  "next_index": 39,
+  "next_index": 40,
   "published": [
     {
       "file": "01_paparazzi.jpg",
@@ -156,6 +156,10 @@
     {
       "file": "39_tom_jerry_pickles.jpg",
       "instagram_media_id": "18095906582119264"
+    },
+    {
+      "file": "40_pink_panther_tailor.jpg",
+      "instagram_media_id": "18138359254722024"
     }
   ]
 }
