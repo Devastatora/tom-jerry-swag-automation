@@ -1,5 +1,5 @@
 {
-  "next_index": 44,
+  "next_index": 45,
   "published": [
     {
       "file": "01_paparazzi.jpg",
@@ -176,6 +176,10 @@
     {
       "file": "44_garfield_odie_school.jpg",
       "instagram_media_id": "18336354298256487"
+    },
+    {
+      "file": "45_pink_panther_bicycle.jpg",
+      "instagram_media_id": "18104082689523788"
     }
   ]
 }
