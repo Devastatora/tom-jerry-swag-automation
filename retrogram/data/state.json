@@ -1,5 +1,5 @@
 {
-  "next_index": 49,
+  "next_index": 50,
   "published": [
     {
       "file": "01_paparazzi.jpg",
@@ -196,6 +196,10 @@
     {
       "file": "49_sonic_bakery.jpg",
       "instagram_media_id": "18132436339759120"
+    },
+    {
+      "file": "50_flash_shoe_repair.jpg",
+      "instagram_media_id": "17990279898117879"
     }
   ]
 }
